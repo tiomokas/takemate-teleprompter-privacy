@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — TakeMate Teleprompter</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 20px 60px;
+    line-height: 1.6;
+    background-color: #333333;
+    color: #E8E8E8;
+  }
+  .top-bar { display: flex; justify-content: flex-end; }
+  .lang-switch { display: flex; gap: 6px; flex-wrap: wrap; }
+  .lang-btn {
+    display: flex; align-items: center; gap: 6px;
+    background: #444444; border: 1px solid #555555; border-radius: 8px;
+    padding: 6px 10px; cursor: pointer; color: #E8E8E8; font-size: 14px;
+  }
+  .lang-btn.active { background: #C9956A; border-color: #C9956A; color: #222222; font-weight: 600; }
+  .lang-btn .flag { font-size: 16px; }
+  .logo-wrap { text-align: center; margin-top: 16px; margin-bottom: 4px; }
+  .logo-wrap img { width: 220px; max-width: 80%; }
+  .subtitle { text-align: center; color: #C9956A; font-size: 14px; letter-spacing: 0.3px; margin-bottom: 24px; }
+  h1 { text-align: center; border-bottom: 2px solid #C9956A; padding-bottom: 12px; color: #FFFFFF; font-size: 24px; }
+  h2 { color: #C9956A; margin-top: 32px; }
+  strong { color: #E3B98F; }
+  a { color: #E3B98F; }
+  code { background-color: #444444; padding: 2px 6px; border-radius: 4px; }
+  .updated { text-align: center; color: #AAAAAA; }
+  [data-lang-block] { display: none; }
+  [data-lang-block].visible { display: block; }
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="lang-switch">
+    <button class="lang-btn" id="btn-en" onclick="setLang('en')"><span class="flag">🇬🇧</span>EN</button>
+    <button class="lang-btn" id="btn-fr" onclick="setLang('fr')"><span class="flag">🇫🇷</span>FR</button>
+    <button class="lang-btn" id="btn-pt" onclick="setLang('pt')"><span class="flag">🇵🇹</span>PT</button>
+    <button class="lang-btn" id="btn-br" onclick="setLang('br')"><span class="flag">🇧🇷</span>BR</button>
+  </div>
+</div>
+
+<div class="logo-wrap">
+  <img src="logo.svg" alt="TakeMate Teleprompter logo">
+</div>
+<p class="subtitle" data-lang-block data-lang="en">Voice-Controlled Teleprompter</p>
+<p class="subtitle" data-lang-block data-lang="fr">Téléprompteur à Commande Vocale</p>
+<p class="subtitle" data-lang-block data-lang="pt">Teleponto Controlado por Voz</p>
+<p class="subtitle" data-lang-block data-lang="br">Teleprompter Controlado por Voz</p>
+
+<!-- ENGLISH -->
+<div data-lang-block data-lang="en">
+  <h1>Privacy Policy — TakeMate Teleprompter</h1>
+  <p class="updated"><strong>Last updated:</strong> August 17, 2026</p>
+
+  <h2>Overview</h2>
+  <p>TakeMate Teleprompter ("the App") is a native Android application that follows your voice and scrolls your script for you, or lets you scroll it manually at your own pace. This Privacy Policy explains how the App handles user data.</p>
+
+  <h2>Data Collection</h2>
+  <p><strong>The App does not collect, store, or sell any personal data.</strong></p>
+  <ul>
+    <li>No account creation or login is required or offered.</li>
+    <li>No analytics, advertising, or crash-reporting SDKs are integrated.</li>
+    <li>No data is shared with third parties for advertising or marketing purposes.</li>
+  </ul>
+
+  <h2>Microphone Permission</h2>
+  <p>The App requests the <code>RECORD_AUDIO</code> permission solely to power its voice-follow mode, tracking which word you're on as you read. Audio captured through the microphone is:</p>
+  <ul>
+    <li>Sent to your Android device's speech recognition service (Google's, by default) purely to convert speech to text, or processed <strong>entirely on-device</strong> if you enable the App's "offline recognition" setting.</li>
+    <li><strong>Never recorded, saved, or transmitted to any server the developer controls.</strong> The App itself keeps no audio or transcript logs.</li>
+  </ul>
+  <p>You can revoke microphone access at any time via Android Settings → Apps → TakeMate Teleprompter → Permissions. Voice mode will not function without it; the App's manual Scroll mode does not require microphone access at all.</p>
+
+  <h2>Your Scripts (Local Storage)</h2>
+  <p>Scripts you write or import are stored only in a local database on your device. They are never uploaded anywhere by the App. If you use the App's own Share feature, that's a deliberate action you take — the App hands the text to whatever app you choose, the same way any "Share" button on Android works. Deleting a script, or uninstalling the App, removes it from your device for good.</p>
+
+  <h2>Internet Access</h2>
+  <p>The App checks a public GitHub repository once in a while to see if a newer version is available. This request does not include any personal or device-identifying information beyond what any standard HTTP request carries.</p>
+
+  <h2>Children's Privacy</h2>
+  <p>The App does not knowingly collect any information from anyone, including children under 13, because it does not collect personal information from anyone at all.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>If this Privacy Policy is updated, the "Last updated" date above will change. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this Privacy Policy can be sent to: <strong>insys55@gmail.com</strong></p>
+</div>
+
+<!-- FRENCH -->
+<div data-lang-block data-lang="fr">
+  <h1>Politique de Confidentialité — TakeMate Teleprompter</h1>
+  <p class="updated"><strong>Dernière mise à jour :</strong> 17 août 2026</p>
+
+  <h2>Aperçu</h2>
+  <p>TakeMate Teleprompter (« l'App ») est une application Android native qui suit votre voix et fait défiler votre texte pour vous, ou vous laisse le faire défiler manuellement à votre propre rythme. Cette Politique de Confidentialité explique comment l'App traite les données des utilisateurs.</p>
+
+  <h2>Collecte de données</h2>
+  <p><strong>L'App ne collecte, ne stocke ni ne vend aucune donnée personnelle.</strong></p>
+  <ul>
+    <li>Aucune création de compte ni connexion n'est requise ou proposée.</li>
+    <li>Aucun SDK d'analyse, de publicité ou de rapport de plantage n'est intégré.</li>
+    <li>Aucune donnée n'est partagée avec des tiers à des fins publicitaires ou marketing.</li>
+  </ul>
+
+  <h2>Autorisation du microphone</h2>
+  <p>L'App demande l'autorisation <code>RECORD_AUDIO</code> uniquement pour activer son mode de suivi vocal, qui repère où vous en êtes dans le texte pendant que vous lisez. L'audio capté par le microphone est :</p>
+  <ul>
+    <li>Envoyé au service de reconnaissance vocale de votre appareil Android (celui de Google, par défaut) uniquement pour convertir la parole en texte, ou traité <strong>entièrement sur l'appareil</strong> si vous activez le paramètre « reconnaissance hors ligne » de l'App.</li>
+    <li><strong>Jamais enregistré, sauvegardé ni transmis à un serveur contrôlé par le développeur.</strong> L'App elle-même ne conserve aucun journal audio ou de transcription.</li>
+  </ul>
+  <p>Vous pouvez révoquer l'accès au microphone à tout moment via Paramètres Android → Applications → TakeMate Teleprompter → Autorisations. Le mode vocal ne fonctionnera pas sans cette autorisation ; le mode défilement manuel de l'App ne nécessite aucun accès au microphone.</p>
+
+  <h2>Vos textes (stockage local)</h2>
+  <p>Les textes que vous écrivez ou importez sont stockés uniquement dans une base de données locale sur votre appareil. Ils ne sont jamais téléversés par l'App. Si vous utilisez la fonction de partage de l'App, il s'agit d'une action délibérée de votre part — l'App transmet le texte à l'application de votre choix, comme n'importe quel bouton « Partager » sur Android. Supprimer un texte, ou désinstaller l'App, le retire définitivement de votre appareil.</p>
+
+  <h2>Accès Internet</h2>
+  <p>L'App consulte de temps en temps un dépôt GitHub public pour vérifier si une nouvelle version est disponible. Cette requête ne contient aucune information personnelle ou d'identification de l'appareil au-delà de ce que transporte toute requête HTTP standard.</p>
+
+  <h2>Confidentialité des enfants</h2>
+  <p>L'App ne collecte sciemment aucune information de qui que ce soit, y compris des enfants de moins de 13 ans, car elle ne collecte aucune information personnelle de personne.</p>
+
+  <h2>Modifications de cette politique</h2>
+  <p>Si cette Politique de Confidentialité est mise à jour, la date de « Dernière mise à jour » ci-dessus sera modifiée. La poursuite de l'utilisation de l'App après ces modifications vaut acceptation de la politique mise à jour.</p>
+
+  <h2>Contact</h2>
+  <p>Pour toute question concernant cette Politique de Confidentialité : <strong>insys55@gmail.com</strong></p>
+</div>
+
+<!-- PORTUGUESE (PT) -->
+<div data-lang-block data-lang="pt">
+  <h1>Política de Privacidade — TakeMate Teleprompter</h1>
+  <p class="updated"><strong>Última atualização:</strong> 17 de agosto de 2026</p>
+
+  <h2>Visão geral</h2>
+  <p>TakeMate Teleprompter ("a App") é uma aplicação nativa Android que segue a tua voz e faz deslizar o teu texto por ti, ou permite que o faças deslizar manualmente ao teu próprio ritmo. Esta Política de Privacidade explica como a App trata os dados do utilizador.</p>
+
+  <h2>Recolha de dados</h2>
+  <p><strong>A App não recolhe, armazena nem vende quaisquer dados pessoais.</strong></p>
+  <ul>
+    <li>Não é necessária nem oferecida criação de conta ou login.</li>
+    <li>Não há SDKs de analytics, publicidade ou relatório de falhas integrados.</li>
+    <li>Nenhum dado é partilhado com terceiros para fins publicitários ou de marketing.</li>
+  </ul>
+
+  <h2>Permissão de microfone</h2>
+  <p>A App pede a permissão <code>RECORD_AUDIO</code> exclusivamente para ativar o modo de leitura por voz, que acompanha em que palavra estás enquanto lês. O áudio captado pelo microfone é:</p>
+  <ul>
+    <li>Enviado para o serviço de reconhecimento de voz do teu dispositivo Android (o da Google, por predefinição) apenas para converter a fala em texto, ou processado <strong>inteiramente no dispositivo</strong> se ativares a definição "reconhecimento offline" da App.</li>
+    <li><strong>Nunca gravado, guardado ou transmitido para qualquer servidor controlado pelo programador.</strong> A própria App não guarda registos de áudio nem de transcrições.</li>
+  </ul>
+  <p>Podes revogar o acesso ao microfone a qualquer momento em Definições do Android → Aplicações → TakeMate Teleprompter → Permissões. O modo de voz não funciona sem esta permissão; o modo de deslocamento manual da App não precisa de acesso ao microfone.</p>
+
+  <h2>Os teus textos (armazenamento local)</h2>
+  <p>Os textos que escreves ou importas são guardados apenas numa base de dados local no teu dispositivo. Nunca são carregados para lado nenhum pela App. Se usares a funcionalidade de partilha da própria App, essa é uma ação deliberada tua — a App entrega o texto à aplicação que escolheres, tal como qualquer botão "Partilhar" no Android. Apagar um texto, ou desinstalar a App, remove-o definitivamente do teu dispositivo.</p>
+
+  <h2>Acesso à Internet</h2>
+  <p>A App consulta de vez em quando um repositório GitHub público para verificar se há uma versão mais recente. Este pedido não inclui qualquer informação pessoal ou de identificação do dispositivo além do que qualquer pedido HTTP padrão transporta.</p>
+
+  <h2>Privacidade de crianças</h2>
+  <p>A App não recolhe, com conhecimento, informação de ninguém, incluindo crianças menores de 13 anos, porque não recolhe informação pessoal de ninguém.</p>
+
+  <h2>Alterações a esta política</h2>
+  <p>Se esta Política de Privacidade for atualizada, a data de "Última atualização" acima será alterada. Continuar a usar a App após alterações constitui aceitação da política atualizada.</p>
+
+  <h2>Contacto</h2>
+  <p>Questões sobre esta Política de Privacidade podem ser enviadas para: <strong>insys55@gmail.com</strong></p>
+</div>
+
+<!-- PORTUGUESE (BR) -->
+<div data-lang-block data-lang="br">
+  <h1>Política de Privacidade — TakeMate Teleprompter</h1>
+  <p class="updated"><strong>Última atualização:</strong> 17 de agosto de 2026</p>
+
+  <h2>Visão geral</h2>
+  <p>TakeMate Teleprompter ("o App") é um aplicativo nativo Android que acompanha sua voz e rola o script para você, ou permite que você role manualmente no seu próprio ritmo. Esta Política de Privacidade explica como o App trata os dados do usuário.</p>
+
+  <h2>Coleta de dados</h2>
+  <p><strong>O App não coleta, armazena nem vende nenhum dado pessoal.</strong></p>
+  <ul>
+    <li>Não é necessária nem oferecida criação de conta ou login.</li>
+    <li>Não há SDKs de análise, publicidade ou relatório de falhas integrados.</li>
+    <li>Nenhum dado é compartilhado com terceiros para fins publicitários ou de marketing.</li>
+  </ul>
+
+  <h2>Permissão de microfone</h2>
+  <p>O App solicita a permissão <code>RECORD_AUDIO</code> exclusivamente para ativar o modo de leitura por voz, que acompanha em qual palavra você está enquanto lê. O áudio captado pelo microfone é:</p>
+  <ul>
+    <li>Enviado ao serviço de reconhecimento de voz do seu dispositivo Android (o do Google, por padrão) apenas para converter a fala em texto, ou processado <strong>inteiramente no dispositivo</strong> se você ativar a opção "reconhecimento offline" do App.</li>
+    <li><strong>Nunca gravado, salvo ou transmitido a nenhum servidor controlado pelo desenvolvedor.</strong> O próprio App não guarda registros de áudio nem de transcrições.</li>
+  </ul>
+  <p>Você pode revogar o acesso ao microfone a qualquer momento em Configurações do Android → Apps → TakeMate Teleprompter → Permissões. O modo de voz não funciona sem essa permissão; o modo de rolagem manual do App não precisa de acesso ao microfone.</p>
+
+  <h2>Seus scripts (armazenamento local)</h2>
+  <p>Os scripts que você escreve ou importa são guardados apenas em um banco de dados local no seu dispositivo. Nunca são enviados para lugar nenhum pelo App. Se você usar o recurso de compartilhamento do próprio App, essa é uma ação deliberada sua — o App entrega o texto ao aplicativo que você escolher, da mesma forma que qualquer botão "Compartilhar" no Android. Excluir um script, ou desinstalar o App, remove-o definitivamente do seu dispositivo.</p>
+
+  <h2>Acesso à Internet</h2>
+  <p>O App consulta de vez em quando um repositório público do GitHub para verificar se há uma versão mais recente. Essa requisição não inclui nenhuma informação pessoal ou de identificação do dispositivo além do que qualquer requisição HTTP padrão carrega.</p>
+
+  <h2>Privacidade de crianças</h2>
+  <p>O App não coleta, conscientemente, informações de ninguém, incluindo crianças menores de 13 anos, porque não coleta informações pessoais de ninguém.</p>
+
+  <h2>Alterações a esta política</h2>
+  <p>Se esta Política de Privacidade for atualizada, a data de "Última atualização" acima será alterada. Continuar usando o App após alterações constitui aceitação da política atualizada.</p>
+
+  <h2>Contato</h2>
+  <p>Dúvidas sobre esta Política de Privacidade podem ser enviadas para: <strong>insys55@gmail.com</strong></p>
+</div>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('[data-lang-block]').forEach(function (el) {
+      el.classList.toggle('visible', el.getAttribute('data-lang') === lang);
+    });
+    ['en', 'fr', 'pt', 'br'].forEach(function (l) {
+      document.getElementById('btn-' + l).classList.toggle('active', l === lang);
+    });
+    document.documentElement.lang = lang === 'br' ? 'pt-BR' : lang;
+    localStorage.setItem('tmt-privacy-lang', lang);
+  }
+  setLang(localStorage.getItem('tmt-privacy-lang') || 'en');
+</script>
+
+</body>
+</html>
